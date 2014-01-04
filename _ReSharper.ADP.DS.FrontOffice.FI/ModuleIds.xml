@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="994C3C58-1FF5-4823-B87F-AC5D23A841DB" ModuleId="ADP.DS.FrontOffice.FI" />
+  <Module PersistentId="B3A8B75A-51E7-47EF-829C-B76B910E1856" ModuleId="ADP.DS.FrontOffice.FI.DataManager" />
+  <Module PersistentId="2D760EFE-558A-4B8F-A44A-359848C13292" ModuleId="ADP.DS.FrontOffice.FI.EF" />
+</Modules>
