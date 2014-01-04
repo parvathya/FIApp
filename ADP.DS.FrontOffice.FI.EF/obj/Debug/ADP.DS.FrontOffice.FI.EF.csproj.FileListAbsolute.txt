@@ -1,0 +1,8 @@
+C:\MenuVantage\F&I Proj\New folder\FIApp\ADP.DS.FrontOffice.FI.EF\bin\Debug\ADP.DS.FrontOffice.FI.EF.dll.config
+C:\MenuVantage\F&I Proj\New folder\FIApp\ADP.DS.FrontOffice.FI.EF\bin\Debug\ADP.DS.FrontOffice.FI.EF.dll
+C:\MenuVantage\F&I Proj\New folder\FIApp\ADP.DS.FrontOffice.FI.EF\bin\Debug\ADP.DS.FrontOffice.FI.EF.pdb
+C:\MenuVantage\F&I Proj\New folder\FIApp\ADP.DS.FrontOffice.FI.EF\bin\Debug\EntityFramework.dll
+C:\MenuVantage\F&I Proj\New folder\FIApp\ADP.DS.FrontOffice.FI.EF\bin\Debug\EntityFramework.xml
+C:\MenuVantage\F&I Proj\New folder\FIApp\ADP.DS.FrontOffice.FI.EF\obj\Debug\ADP.DS.FrontOffice.FI.EF.dll
+C:\MenuVantage\F&I Proj\New folder\FIApp\ADP.DS.FrontOffice.FI.EF\obj\Debug\ADP.DS.FrontOffice.FI.EF.pdb
+C:\MenuVantage\F&I Proj\New folder\FIApp\ADP.DS.FrontOffice.FI.EF\obj\Debug\ADP.DS.FrontOffice.FI.EF.csprojResolveAssemblyReference.cache

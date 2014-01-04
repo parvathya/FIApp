@@ -1,0 +1,6 @@
+﻿/* Hack for ie8 only*/
+
+.selectBox:focus {
+    width: auto\9;
+    overflow: auto\9;
+}

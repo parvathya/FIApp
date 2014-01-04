@@ -1,0 +1,4 @@
+C:\MenuVantage\F&I Proj\New folder\FIApp\FIApp.Model\bin\Debug\FIApp.Model.dll
+C:\MenuVantage\F&I Proj\New folder\FIApp\FIApp.Model\bin\Debug\FIApp.Model.pdb
+C:\MenuVantage\F&I Proj\New folder\FIApp\FIApp.Model\obj\Debug\FIApp.Model.dll
+C:\MenuVantage\F&I Proj\New folder\FIApp\FIApp.Model\obj\Debug\FIApp.Model.pdb

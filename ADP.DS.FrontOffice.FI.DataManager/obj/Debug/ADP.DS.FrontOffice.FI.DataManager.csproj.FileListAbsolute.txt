@@ -1,0 +1,11 @@
+C:\MenuVantage\F&I Proj\New folder\FIApp\ADP.DS.FrontOffice.FI.DataManager\bin\Debug\ADP.DS.FrontOffice.FI.DataManager.dll
+C:\MenuVantage\F&I Proj\New folder\FIApp\ADP.DS.FrontOffice.FI.DataManager\bin\Debug\ADP.DS.FrontOffice.FI.DataManager.pdb
+C:\MenuVantage\F&I Proj\New folder\FIApp\ADP.DS.FrontOffice.FI.DataManager\bin\Debug\ADP.DS.FrontOffice.FI.EF.dll
+C:\MenuVantage\F&I Proj\New folder\FIApp\ADP.DS.FrontOffice.FI.DataManager\bin\Debug\EntityFramework.dll
+C:\MenuVantage\F&I Proj\New folder\FIApp\ADP.DS.FrontOffice.FI.DataManager\bin\Debug\ADP.DS.FrontOffice.FI.EF.pdb
+C:\MenuVantage\F&I Proj\New folder\FIApp\ADP.DS.FrontOffice.FI.DataManager\bin\Debug\EntityFramework.xml
+C:\MenuVantage\F&I Proj\New folder\FIApp\ADP.DS.FrontOffice.FI.DataManager\obj\Debug\ADP.DS.FrontOffice.FI.DataManager.csprojResolveAssemblyReference.cache
+C:\MenuVantage\F&I Proj\New folder\FIApp\ADP.DS.FrontOffice.FI.DataManager\obj\Debug\ADP.DS.FrontOffice.FI.DataManager.dll
+C:\MenuVantage\F&I Proj\New folder\FIApp\ADP.DS.FrontOffice.FI.DataManager\obj\Debug\ADP.DS.FrontOffice.FI.DataManager.pdb
+C:\MenuVantage\F&I Proj\New folder\FIApp\ADP.DS.FrontOffice.FI.DataManager\bin\Debug\FIApp.Model.dll
+C:\MenuVantage\F&I Proj\New folder\FIApp\ADP.DS.FrontOffice.FI.DataManager\bin\Debug\FIApp.Model.pdb

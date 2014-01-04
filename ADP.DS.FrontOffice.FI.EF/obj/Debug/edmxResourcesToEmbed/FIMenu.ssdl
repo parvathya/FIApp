@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="menuvantageModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="menuvantageModelStoreContainer">
+    <EntitySet Name="ProductDetail" EntityType="menuvantageModel.Store.ProductDetail" store:Type="Tables" store:Schema="dbo" store:Name="ProductDetail">
+      <DefiningQuery>SELECT 
+      [ProductDetail].[ProductDetailId] AS [ProductDetailId], 
+      [ProductDetail].[DealerId] AS [DealerId], 
+      [ProductDetail].[ProductId] AS [ProductId], 
+      [ProductDetail].[ProductType] AS [ProductType], 
+      [ProductDetail].[Provider] AS [Provider], 
+      [ProductDetail].[ProductName] AS [ProductName], 
+      [ProductDetail].[ShortDescription] AS [ShortDescription], 
+      [ProductDetail].[LongDescription] AS [LongDescription], 
+      [ProductDetail].[VideoUrl] AS [VideoUrl], 
+      [ProductDetail].[dealtype] AS [dealtype]
+      FROM [dbo].[ProductDetail] AS [ProductDetail]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'menuVantage.dbo.ProductDetail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="ProductDetail">
+    <Key>
+      <PropertyRef Name="ProductDetailId" />
+      <PropertyRef Name="DealerId" />
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="ProductDetailId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="ProductType" Type="nchar" MaxLength="10" />
+    <Property Name="Provider" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="75" />
+    <Property Name="ShortDescription" Type="nvarchar" MaxLength="150" />
+    <Property Name="LongDescription" Type="nvarchar" MaxLength="500" />
+    <Property Name="VideoUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="dealtype" Type="int" Nullable="false" />
+  </EntityType>
+</Schema>
