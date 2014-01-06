@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ADP.DS.FrontOffice.Menu.ReportScheduler.WebApi")]
+[assembly: AssemblyTitle("ADP.DS.FrontOffice.FI")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ADP - Dealer Services")]
-[assembly: AssemblyProduct("ADP.DS.FrontOffice.Menu.ReportScheduler.WebApi")]
-[assembly: AssemblyCopyright("Copyright © ADP - Dealer Services 2013")]
+[assembly: AssemblyProduct("ADP.DS.FrontOffice.FI")]
+[assembly: AssemblyCopyright("Copyright © ADP - Dealer Services 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
