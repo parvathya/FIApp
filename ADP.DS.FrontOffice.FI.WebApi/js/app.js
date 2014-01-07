@@ -1,10 +1,50 @@
 'use strict';
 
+//Create spinner app module
+var sharedServices = angular.module('spinner', []);
+sharedServices.config(function ($httpProvider) {
 
-// Declare app level module which depends on filters, and services
-angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives']).
-  config(['$routeProvider', function($routeProvider) {
-    $routeProvider.when('/view1', {template: '/partials/partial1.html', controller: MyCtrl1});
-    $routeProvider.when('/view2', {template: '/partials/partial2.html', controller: MyCtrl2});
-    $routeProvider.otherwise({redirectTo: '/view1'});
-  }]);
+    $httpProvider.responseInterceptors.push('myHttpInterceptor');
+    var spinnerFunction = function (data) {
+        new Spinner().spin(document.body);
+        document.body.disabled = true;
+        return data;
+    };
+    $httpProvider.defaults.transformRequest.push(spinnerFunction);
+});
+
+sharedServices.factory('myHttpInterceptor', function ($q) {
+    return function (promise) {
+        return promise.then(function (response) {
+            var spinner = $(".spinner");
+            document.body.disabled = false;
+            spinner.remove();
+            return response;
+
+        }, function (response) {
+            var spinner = $(".spinner");
+            document.body.disabled = false;
+            spinner.remove();
+            return $q.reject(response);
+        });
+    };
+
+});
+
+//Declare the main app module and inject the spinner
+var productsApp = angular.module('productsApp', ['spinner'])
+    .config(['$routeProvider', function ($routeProvider) {
+
+        $routeProvider.when('/login', {
+            templateUrl: 'partials/login.html',
+            controller: 'loginController',
+        });
+        $routeProvider.when('/products', {
+            templateUrl: 'partials/products.html',
+            controller: 'productsController',
+        });
+        $routeProvider.otherwise({
+            redirectTo: '/login'
+        });
+
+    }]);

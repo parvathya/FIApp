@@ -168,6 +168,7 @@
     <Content Include="Content\css\bootstrap-theme.min.css" />
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\images\adp_logo_small.gif" />
     <Content Include="Content\themes\base\images\animated-overlay.gif" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -233,6 +234,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Index.html" />
+    <Content Include="js\Services\sharedService.js" />
     <Content Include="packages.config" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
@@ -240,12 +242,11 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
     <None Include="Properties\PublishProfiles\MenuVReports.pubxml" />
     <Content Include="js\app.js" />
-    <Content Include="js\controllers.js" />
-    <Content Include="js\directives.js" />
-    <Content Include="js\filters.js" />
-    <Content Include="js\services.js" />
-    <Content Include="partials\partial1.html" />
-    <Content Include="partials\partial2.html" />
+    <Content Include="js\Controllers\productsController.js" />
+    <Content Include="js\Directives\directives.js" />
+    <Content Include="js\Services\productsService.js" />
+    <Content Include="partials\login.html" />
+    <Content Include="partials\products.html" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-cookies.js" />
@@ -526,6 +527,9 @@
     <Content Include="Scripts\jquery-2.0.3.min.js" />
     <Content Include="Scripts\jquery-ui-1.10.3.js" />
     <Content Include="Scripts\jquery-ui-1.10.3.min.js" />
+    <Content Include="Scripts\Spin.js" />
+    <Content Include="Scripts\underscore.js" />
+    <Content Include="Scripts\underscore.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -1,23 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="menuvantageModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityContainer Name="menuvantageEntities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
-    <EntitySet Name="ProductDetails" EntityType="menuvantageModel.ProductDetail" />
+    <EntitySet Name="ProductDetail" EntityType="menuvantageModel.ProductDetail" />
+    <EntitySet Name="ProductSaleStats" EntityType="menuvantageModel.ProductSaleStats" />
   </EntityContainer>
   <EntityType Name="ProductDetail">
     <Key>
       <PropertyRef Name="ProductDetailId" />
       <PropertyRef Name="DealerId" />
       <PropertyRef Name="ProductId" />
+      <PropertyRef Name="ProductTypeId" />
+      <PropertyRef Name="ProductType" />
+      <PropertyRef Name="ProviderId" />
+      <PropertyRef Name="ProviderName" />
+      <PropertyRef Name="ProductName" />
+      <PropertyRef Name="CashType" />
     </Key>
-    <Property Type="Int32" Name="ProductDetailId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int32" Name="ProductDetailId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
     <Property Type="Int32" Name="DealerId" Nullable="false" />
     <Property Type="Int32" Name="ProductId" Nullable="false" />
-    <Property Type="String" Name="ProductType" MaxLength="10" FixedLength="true" Unicode="true" />
-    <Property Type="String" Name="Provider" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Type="String" Name="ProductName" MaxLength="75" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ProductTypeId" Nullable="false" />
+    <Property Type="String" Name="ProductType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ProviderId" Nullable="false" />
+    <Property Type="String" Name="ProviderName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="75" FixedLength="false" Unicode="true" />
     <Property Type="String" Name="ShortDescription" MaxLength="150" FixedLength="false" Unicode="true" />
     <Property Type="String" Name="LongDescription" MaxLength="500" FixedLength="false" Unicode="true" />
     <Property Type="String" Name="VideoUrl" MaxLength="200" FixedLength="false" Unicode="true" />
-    <Property Type="Int32" Name="dealtype" Nullable="false" />
+    <Property Type="Boolean" Name="CashType" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductSaleStats">
+    <Key>
+      <PropertyRef Name="StatisticId" />
+      <PropertyRef Name="DealerId" />
+      <PropertyRef Name="ProductType" />
+    </Key>
+    <Property Type="Int32" Name="StatisticId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="String" Name="ProductType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="NumberOfProductsSold" />
   </EntityType>
 </Schema>

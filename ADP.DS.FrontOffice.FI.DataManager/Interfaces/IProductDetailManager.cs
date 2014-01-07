@@ -5,6 +5,6 @@ namespace ADP.DS.FrontOffice.FI.DataManager.Interfaces
 {
     interface IProductDetailManager
     {
-        IList<ProductTypeDetail> GetProductDetails(int dealerId, int dealType);
+        IList<ProductTypeDetail> GetProductDetails(int dealerId, bool dealType);
     }
 }

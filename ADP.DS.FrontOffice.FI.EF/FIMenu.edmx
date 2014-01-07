@@ -4,21 +4,31 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="menuvantageModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="menuvantageModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityContainer Name="menuvantageModelStoreContainer">
-          <EntitySet Name="ProductDetail" EntityType="menuvantageModel.Store.ProductDetail" store:Type="Tables" store:Schema="dbo" store:Name="ProductDetail" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator">
+          <EntitySet Name="ProductDetail" EntityType="menuvantageModel.Store.ProductDetail" store:Type="Tables" store:Schema="dbo" store:Name="ProductDetail">
             <DefiningQuery>SELECT 
       [ProductDetail].[ProductDetailId] AS [ProductDetailId], 
       [ProductDetail].[DealerId] AS [DealerId], 
       [ProductDetail].[ProductId] AS [ProductId], 
+      [ProductDetail].[ProductTypeId] AS [ProductTypeId], 
       [ProductDetail].[ProductType] AS [ProductType], 
-      [ProductDetail].[Provider] AS [Provider], 
+      [ProductDetail].[ProviderId] AS [ProviderId], 
+      [ProductDetail].[ProviderName] AS [ProviderName], 
       [ProductDetail].[ProductName] AS [ProductName], 
       [ProductDetail].[ShortDescription] AS [ShortDescription], 
       [ProductDetail].[LongDescription] AS [LongDescription], 
       [ProductDetail].[VideoUrl] AS [VideoUrl], 
-      [ProductDetail].[dealtype] AS [dealtype]
+      [ProductDetail].[CashType] AS [CashType]
       FROM [dbo].[ProductDetail] AS [ProductDetail]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="ProductSaleStats" EntityType="menuvantageModel.Store.ProductSaleStats" store:Type="Tables" store:Schema="dbo" store:Name="ProductSaleStats">
+            <DefiningQuery>SELECT 
+      [ProductSaleStats].[StatisticId] AS [StatisticId], 
+      [ProductSaleStats].[DealerId] AS [DealerId], 
+      [ProductSaleStats].[ProductType] AS [ProductType], 
+      [ProductSaleStats].[NumberOfProductsSold] AS [NumberOfProductsSold]
+      FROM [dbo].[ProductSaleStats] AS [ProductSaleStats]</DefiningQuery>
           </EntitySet>
         </EntityContainer>
         <!--Errors Found During Generation:
@@ -29,42 +39,83 @@
             <PropertyRef Name="ProductDetailId" />
             <PropertyRef Name="DealerId" />
             <PropertyRef Name="ProductId" />
-            
+            <PropertyRef Name="ProductTypeId" />
+            <PropertyRef Name="ProductType" />
+            <PropertyRef Name="ProviderId" />
+            <PropertyRef Name="ProviderName" />
+            <PropertyRef Name="ProductName" />
+            <PropertyRef Name="CashType" />
           </Key>
           <Property Name="ProductDetailId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="DealerId" Type="int" Nullable="false" />
           <Property Name="ProductId" Type="int" Nullable="false" />
-          <Property Name="ProductType" Type="nchar" MaxLength="10" />
-          <Property Name="Provider" Type="nvarchar" MaxLength="50" />
-          <Property Name="ProductName" Type="nvarchar" MaxLength="75" />
+          <Property Name="ProductTypeId" Type="int" Nullable="false" />
+          <Property Name="ProductType" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ProviderId" Type="int" Nullable="false" />
+          <Property Name="ProviderName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ProductName" Type="nvarchar" Nullable="false" MaxLength="75" />
           <Property Name="ShortDescription" Type="nvarchar" MaxLength="150" />
           <Property Name="LongDescription" Type="nvarchar" MaxLength="500" />
           <Property Name="VideoUrl" Type="nvarchar" MaxLength="200" />
-          <Property Name="dealtype" Type="int" Nullable="false" />
+          <Property Name="CashType" Type="bit" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'menuVantage.dbo.ProductSaleStats' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="ProductSaleStats">
+          <Key>
+            <PropertyRef Name="StatisticId" />
+            <PropertyRef Name="DealerId" />
+            <PropertyRef Name="ProductType" />
+          </Key>
+          <Property Name="StatisticId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DealerId" Type="int" Nullable="false" />
+          <Property Name="ProductType" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="NumberOfProductsSold" Type="int" />
         </EntityType>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="menuvantageModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="menuvantageEntities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
-          <EntitySet Name="ProductDetails" EntityType="menuvantageModel.ProductDetail" />
+          <EntitySet Name="ProductDetail" EntityType="menuvantageModel.ProductDetail" />
+          <EntitySet Name="ProductSaleStats" EntityType="menuvantageModel.ProductSaleStats" />
         </EntityContainer>
         <EntityType Name="ProductDetail">
           <Key>
             <PropertyRef Name="ProductDetailId" />
             <PropertyRef Name="DealerId" />
             <PropertyRef Name="ProductId" />
+            <PropertyRef Name="ProductTypeId" />
+            <PropertyRef Name="ProductType" />
+            <PropertyRef Name="ProviderId" />
+            <PropertyRef Name="ProviderName" />
+            <PropertyRef Name="ProductName" />
+            <PropertyRef Name="CashType" />
           </Key>
-          <Property Type="Int32" Name="ProductDetailId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="ProductDetailId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Type="Int32" Name="DealerId" Nullable="false" />
           <Property Type="Int32" Name="ProductId" Nullable="false" />
-          <Property Type="String" Name="ProductType" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Type="String" Name="Provider" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Type="String" Name="ProductName" MaxLength="75" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ProductTypeId" Nullable="false" />
+          <Property Type="String" Name="ProductType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="ProviderId" Nullable="false" />
+          <Property Type="String" Name="ProviderName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ProductName" Nullable="false" MaxLength="75" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="ShortDescription" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="LongDescription" MaxLength="500" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="VideoUrl" MaxLength="200" FixedLength="false" Unicode="true" />
-          <Property Type="Int32" Name="dealtype" Nullable="false" />
+          <Property Type="Boolean" Name="CashType" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProductSaleStats">
+          <Key>
+            <PropertyRef Name="StatisticId" />
+            <PropertyRef Name="DealerId" />
+            <PropertyRef Name="ProductType" />
+          </Key>
+          <Property Type="Int32" Name="StatisticId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="DealerId" Nullable="false" />
+          <Property Type="String" Name="ProductType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="NumberOfProductsSold" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -72,19 +123,31 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="menuvantageModelStoreContainer" CdmEntityContainer="menuvantageEntities">
-          <EntitySetMapping Name="ProductDetails">
+          <EntitySetMapping Name="ProductDetail">
             <EntityTypeMapping TypeName="menuvantageModel.ProductDetail">
               <MappingFragment StoreEntitySet="ProductDetail">
-                <ScalarProperty Name="dealtype" ColumnName="dealtype" />
+                <ScalarProperty Name="CashType" ColumnName="CashType" />
                 <ScalarProperty Name="VideoUrl" ColumnName="VideoUrl" />
                 <ScalarProperty Name="LongDescription" ColumnName="LongDescription" />
                 <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
                 <ScalarProperty Name="ProductName" ColumnName="ProductName" />
-                <ScalarProperty Name="Provider" ColumnName="Provider" />
+                <ScalarProperty Name="ProviderName" ColumnName="ProviderName" />
+                <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
                 <ScalarProperty Name="ProductType" ColumnName="ProductType" />
+                <ScalarProperty Name="ProductTypeId" ColumnName="ProductTypeId" />
                 <ScalarProperty Name="ProductId" ColumnName="ProductId" />
                 <ScalarProperty Name="DealerId" ColumnName="DealerId" />
                 <ScalarProperty Name="ProductDetailId" ColumnName="ProductDetailId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProductSaleStats">
+            <EntityTypeMapping TypeName="menuvantageModel.ProductSaleStats">
+              <MappingFragment StoreEntitySet="ProductSaleStats">
+                <ScalarProperty Name="NumberOfProductsSold" ColumnName="NumberOfProductsSold" />
+                <ScalarProperty Name="ProductType" ColumnName="ProductType" />
+                <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+                <ScalarProperty Name="StatisticId" ColumnName="StatisticId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -102,7 +165,7 @@
     <Options>
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
-        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
       </DesignerInfoPropertySet>

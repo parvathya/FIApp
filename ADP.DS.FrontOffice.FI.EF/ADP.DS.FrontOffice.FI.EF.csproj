@@ -68,6 +68,9 @@
     <Compile Include="ProductDetail.cs">
       <DependentUpon>FIMenu.tt</DependentUpon>
     </Compile>
+    <Compile Include="ProductSaleStats.cs">
+      <DependentUpon>FIMenu.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

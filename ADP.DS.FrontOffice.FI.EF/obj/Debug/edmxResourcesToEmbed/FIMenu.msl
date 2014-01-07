@@ -1,19 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="menuvantageModelStoreContainer" CdmEntityContainer="menuvantageEntities">
-    <EntitySetMapping Name="ProductDetails">
+    <EntitySetMapping Name="ProductDetail">
       <EntityTypeMapping TypeName="menuvantageModel.ProductDetail">
         <MappingFragment StoreEntitySet="ProductDetail">
-          <ScalarProperty Name="dealtype" ColumnName="dealtype" />
+          <ScalarProperty Name="CashType" ColumnName="CashType" />
           <ScalarProperty Name="VideoUrl" ColumnName="VideoUrl" />
           <ScalarProperty Name="LongDescription" ColumnName="LongDescription" />
           <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
           <ScalarProperty Name="ProductName" ColumnName="ProductName" />
-          <ScalarProperty Name="Provider" ColumnName="Provider" />
+          <ScalarProperty Name="ProviderName" ColumnName="ProviderName" />
+          <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
           <ScalarProperty Name="ProductType" ColumnName="ProductType" />
+          <ScalarProperty Name="ProductTypeId" ColumnName="ProductTypeId" />
           <ScalarProperty Name="ProductId" ColumnName="ProductId" />
           <ScalarProperty Name="DealerId" ColumnName="DealerId" />
           <ScalarProperty Name="ProductDetailId" ColumnName="ProductDetailId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductSaleStats">
+      <EntityTypeMapping TypeName="menuvantageModel.ProductSaleStats">
+        <MappingFragment StoreEntitySet="ProductSaleStats">
+          <ScalarProperty Name="NumberOfProductsSold" ColumnName="NumberOfProductsSold" />
+          <ScalarProperty Name="ProductType" ColumnName="ProductType" />
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="StatisticId" ColumnName="StatisticId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

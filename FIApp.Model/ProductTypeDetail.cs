@@ -10,6 +10,6 @@
         public string ShortDescription { get; set; }
         public string LongDescription { get; set; }
         public string VideoLocation { get; set; }
-        public int DealType { get; set; }
+        public bool CashType { get; set; }
     }
 }
