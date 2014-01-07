@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADP.DS.FrontOffice.FI.DataM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADP.DS.FrontOffice.FI.EF", "ADP.DS.FrontOffice.FI.EF\ADP.DS.FrontOffice.FI.EF.csproj", "{2D760EFE-558A-4B8F-A44A-359848C13292}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADP.DS.FrontOffice.FI", "ADP.DS.FrontOffice.Menu.FI.WebApi\ADP.DS.FrontOffice.FI.csproj", "{994C3C58-1FF5-4823-B87F-AC5D23A841DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADP.DS.FrontOffice.FI", "ADP.DS.FrontOffice.FI.WebApi\ADP.DS.FrontOffice.FI.csproj", "{994C3C58-1FF5-4823-B87F-AC5D23A841DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
