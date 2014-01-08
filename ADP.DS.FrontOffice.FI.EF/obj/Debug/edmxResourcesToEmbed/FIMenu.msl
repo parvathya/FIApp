@@ -1,6 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="menuvantageModelStoreContainer" CdmEntityContainer="menuvantageEntities">
+    <EntitySetMapping Name="ProductSaleStats">
+      <EntityTypeMapping TypeName="menuvantageModel.ProductSaleStats">
+        <MappingFragment StoreEntitySet="ProductSaleStats">
+          <ScalarProperty Name="NumberOfProductsSold" ColumnName="NumberOfProductsSold" />
+          <ScalarProperty Name="ProductType" ColumnName="ProductType" />
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="StatisticId" ColumnName="StatisticId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="ProductDetail">
       <EntityTypeMapping TypeName="menuvantageModel.ProductDetail">
         <MappingFragment StoreEntitySet="ProductDetail">
@@ -16,16 +26,6 @@
           <ScalarProperty Name="ProductId" ColumnName="ProductId" />
           <ScalarProperty Name="DealerId" ColumnName="DealerId" />
           <ScalarProperty Name="ProductDetailId" ColumnName="ProductDetailId" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="ProductSaleStats">
-      <EntityTypeMapping TypeName="menuvantageModel.ProductSaleStats">
-        <MappingFragment StoreEntitySet="ProductSaleStats">
-          <ScalarProperty Name="NumberOfProductsSold" ColumnName="NumberOfProductsSold" />
-          <ScalarProperty Name="ProductType" ColumnName="ProductType" />
-          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
-          <ScalarProperty Name="StatisticId" ColumnName="StatisticId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

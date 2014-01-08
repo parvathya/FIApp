@@ -11,10 +11,11 @@ namespace ADP.DS.FrontOffice.FI.Controllers
     {
       
         [GET("api/products/{dealerId}/{cashType}")]
-        public IList<ProductTypeDetail> GetProductDetails(int dealerId, bool cashType)
+        public IList<ProductTypeDetail> GetProductDetails(int dealerId,string cashType)
         {
             var productDetailManager = new ProductDetailManager();
-            return productDetailManager.GetProductDetails(dealerId, cashType);
+
+            return productDetailManager.GetProductDetails(dealerId, bool.Parse(cashType));
         }
        
     }

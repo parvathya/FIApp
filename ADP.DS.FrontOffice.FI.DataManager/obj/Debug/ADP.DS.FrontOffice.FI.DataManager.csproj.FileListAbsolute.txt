@@ -20,3 +20,14 @@ C:\GitHub\FIProductsShowCase\FIApp\ADP.DS.FrontOffice.FI.DataManager\bin\Debug\E
 C:\GitHub\FIProductsShowCase\FIApp\ADP.DS.FrontOffice.FI.DataManager\obj\Debug\ADP.DS.FrontOffice.FI.DataManager.csprojResolveAssemblyReference.cache
 C:\GitHub\FIProductsShowCase\FIApp\ADP.DS.FrontOffice.FI.DataManager\obj\Debug\ADP.DS.FrontOffice.FI.DataManager.dll
 C:\GitHub\FIProductsShowCase\FIApp\ADP.DS.FrontOffice.FI.DataManager\obj\Debug\ADP.DS.FrontOffice.FI.DataManager.pdb
+C:\MenuVantage\FIProj\FIApp\ADP.DS.FrontOffice.FI.DataManager\bin\Debug\ADP.DS.FrontOffice.FI.DataManager.dll
+C:\MenuVantage\FIProj\FIApp\ADP.DS.FrontOffice.FI.DataManager\bin\Debug\ADP.DS.FrontOffice.FI.DataManager.pdb
+C:\MenuVantage\FIProj\FIApp\ADP.DS.FrontOffice.FI.DataManager\bin\Debug\ADP.DS.FrontOffice.FI.EF.dll
+C:\MenuVantage\FIProj\FIApp\ADP.DS.FrontOffice.FI.DataManager\bin\Debug\EntityFramework.dll
+C:\MenuVantage\FIProj\FIApp\ADP.DS.FrontOffice.FI.DataManager\bin\Debug\FIApp.Model.dll
+C:\MenuVantage\FIProj\FIApp\ADP.DS.FrontOffice.FI.DataManager\bin\Debug\ADP.DS.FrontOffice.FI.EF.pdb
+C:\MenuVantage\FIProj\FIApp\ADP.DS.FrontOffice.FI.DataManager\bin\Debug\FIApp.Model.pdb
+C:\MenuVantage\FIProj\FIApp\ADP.DS.FrontOffice.FI.DataManager\bin\Debug\EntityFramework.xml
+C:\MenuVantage\FIProj\FIApp\ADP.DS.FrontOffice.FI.DataManager\obj\Debug\ADP.DS.FrontOffice.FI.DataManager.csprojResolveAssemblyReference.cache
+C:\MenuVantage\FIProj\FIApp\ADP.DS.FrontOffice.FI.DataManager\obj\Debug\ADP.DS.FrontOffice.FI.DataManager.dll
+C:\MenuVantage\FIProj\FIApp\ADP.DS.FrontOffice.FI.DataManager\obj\Debug\ADP.DS.FrontOffice.FI.DataManager.pdb

@@ -1,9 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="menuvantageModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityContainer Name="menuvantageEntities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
-    <EntitySet Name="ProductDetail" EntityType="menuvantageModel.ProductDetail" />
     <EntitySet Name="ProductSaleStats" EntityType="menuvantageModel.ProductSaleStats" />
+    <EntitySet Name="ProductDetail" EntityType="menuvantageModel.ProductDetail" />
   </EntityContainer>
+  <EntityType Name="ProductSaleStats">
+    <Key>
+      <PropertyRef Name="StatisticId" />
+      <PropertyRef Name="DealerId" />
+      <PropertyRef Name="ProductType" />
+    </Key>
+    <Property Type="Int32" Name="StatisticId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="String" Name="ProductType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="NumberOfProductsSold" />
+  </EntityType>
   <EntityType Name="ProductDetail">
     <Key>
       <PropertyRef Name="ProductDetailId" />
@@ -28,16 +39,5 @@
     <Property Type="String" Name="LongDescription" MaxLength="500" FixedLength="false" Unicode="true" />
     <Property Type="String" Name="VideoUrl" MaxLength="200" FixedLength="false" Unicode="true" />
     <Property Type="Boolean" Name="CashType" Nullable="false" />
-  </EntityType>
-  <EntityType Name="ProductSaleStats">
-    <Key>
-      <PropertyRef Name="StatisticId" />
-      <PropertyRef Name="DealerId" />
-      <PropertyRef Name="ProductType" />
-    </Key>
-    <Property Type="Int32" Name="StatisticId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
-    <Property Type="Int32" Name="DealerId" Nullable="false" />
-    <Property Type="String" Name="ProductType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Type="Int32" Name="NumberOfProductsSold" />
   </EntityType>
 </Schema>

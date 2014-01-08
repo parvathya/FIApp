@@ -12,7 +12,7 @@ namespace ADP.DS.FrontOffice.FI.DataManager.Managers
         {
             using (var context = new menuvantageEntities())
             {
-                var dbProductDetails = context.ProductDetail.Where(p => p.DealerId == dealerId && p.CashType).ToList();
+                var dbProductDetails = context.ProductDetail.Where(p => p.DealerId == dealerId && p.CashType == cashType).ToList();
                 var productTypeDetails = dbProductDetails.Select(dbProductDetail => new ProductTypeDetail
                                                                                                               {
                                                                                                                   CashType = dbProductDetail.CashType,

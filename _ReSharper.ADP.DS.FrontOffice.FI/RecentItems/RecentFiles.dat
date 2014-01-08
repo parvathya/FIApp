@@ -1,7 +1,15 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="2D760EFE-558A-4B8F-A44A-359848C13292/f:App.Config" caret="1045" fromTop="12" />
-    <File id="B3A8B75A-51E7-47EF-829C-B76B910E1856/d:Managers/f:ProductDetailManager.cs" caret="2196" fromTop="26" />
+    <File id="994C3C58-1FF5-4823-B87F-AC5D23A841DB/f:Index.html" caret="0" fromTop="0" />
+    <File id="0ED972B1-C2C6-4CD1-B430-7010F3CD026D/f:ProductTypeDetail.cs" caret="59" fromTop="2" />
+    <File id="994C3C58-1FF5-4823-B87F-AC5D23A841DB/d:App_Start/f:RouteConfig.cs" caret="295" fromTop="12" />
+    <File id="B3A8B75A-51E7-47EF-829C-B76B910E1856/d:Interfaces/f:IProductDetailManager.cs" caret="245" fromTop="7" />
+    <File id="B3A8B75A-51E7-47EF-829C-B76B910E1856/d:Managers/f:ProductDetailManager.cs" caret="291" fromTop="8" />
+    <File id="994C3C58-1FF5-4823-B87F-AC5D23A841DB/d:Controllers/f:ProductsController.cs" caret="355" fromTop="12" />
   </RecentFiles>
-  <RecentEdits />
+  <RecentEdits>
+    <File id="994C3C58-1FF5-4823-B87F-AC5D23A841DB/d:Controllers/f:ProductsController.cs" caret="606" fromTop="17" />
+    <File id="B3A8B75A-51E7-47EF-829C-B76B910E1856/d:Managers/f:ProductDetailManager.cs" caret="382" fromTop="10" />
+    <File id="B3A8B75A-51E7-47EF-829C-B76B910E1856/d:Interfaces/f:IProductDetailManager.cs" caret="245" fromTop="7" />
+  </RecentEdits>
 </RecentFiles>

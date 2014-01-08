@@ -7,3 +7,8 @@ C:\GitHub\FIProductsShowCase\FIApp\FIApp.Model\bin\Debug\FIApp.Model.pdb
 C:\GitHub\FIProductsShowCase\FIApp\FIApp.Model\obj\Debug\ADP.DS.FrontOffice.FI.Model.csprojResolveAssemblyReference.cache
 C:\GitHub\FIProductsShowCase\FIApp\FIApp.Model\obj\Debug\FIApp.Model.dll
 C:\GitHub\FIProductsShowCase\FIApp\FIApp.Model\obj\Debug\FIApp.Model.pdb
+C:\MenuVantage\FIProj\FIApp\FIApp.Model\bin\Debug\FIApp.Model.dll
+C:\MenuVantage\FIProj\FIApp\FIApp.Model\bin\Debug\FIApp.Model.pdb
+C:\MenuVantage\FIProj\FIApp\FIApp.Model\obj\Debug\ADP.DS.FrontOffice.FI.Model.csprojResolveAssemblyReference.cache
+C:\MenuVantage\FIProj\FIApp\FIApp.Model\obj\Debug\FIApp.Model.dll
+C:\MenuVantage\FIProj\FIApp\FIApp.Model\obj\Debug\FIApp.Model.pdb

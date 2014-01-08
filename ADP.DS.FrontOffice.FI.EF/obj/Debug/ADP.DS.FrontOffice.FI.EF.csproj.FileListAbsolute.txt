@@ -14,3 +14,11 @@ C:\GitHub\FIProductsShowCase\FIApp\ADP.DS.FrontOffice.FI.EF\bin\Debug\EntityFram
 C:\GitHub\FIProductsShowCase\FIApp\ADP.DS.FrontOffice.FI.EF\obj\Debug\ADP.DS.FrontOffice.FI.EF.csprojResolveAssemblyReference.cache
 C:\GitHub\FIProductsShowCase\FIApp\ADP.DS.FrontOffice.FI.EF\obj\Debug\ADP.DS.FrontOffice.FI.EF.dll
 C:\GitHub\FIProductsShowCase\FIApp\ADP.DS.FrontOffice.FI.EF\obj\Debug\ADP.DS.FrontOffice.FI.EF.pdb
+C:\MenuVantage\FIProj\FIApp\ADP.DS.FrontOffice.FI.EF\bin\Debug\ADP.DS.FrontOffice.FI.EF.dll.config
+C:\MenuVantage\FIProj\FIApp\ADP.DS.FrontOffice.FI.EF\bin\Debug\ADP.DS.FrontOffice.FI.EF.dll
+C:\MenuVantage\FIProj\FIApp\ADP.DS.FrontOffice.FI.EF\bin\Debug\ADP.DS.FrontOffice.FI.EF.pdb
+C:\MenuVantage\FIProj\FIApp\ADP.DS.FrontOffice.FI.EF\bin\Debug\EntityFramework.dll
+C:\MenuVantage\FIProj\FIApp\ADP.DS.FrontOffice.FI.EF\bin\Debug\EntityFramework.xml
+C:\MenuVantage\FIProj\FIApp\ADP.DS.FrontOffice.FI.EF\obj\Debug\ADP.DS.FrontOffice.FI.EF.csprojResolveAssemblyReference.cache
+C:\MenuVantage\FIProj\FIApp\ADP.DS.FrontOffice.FI.EF\obj\Debug\ADP.DS.FrontOffice.FI.EF.dll
+C:\MenuVantage\FIProj\FIApp\ADP.DS.FrontOffice.FI.EF\obj\Debug\ADP.DS.FrontOffice.FI.EF.pdb

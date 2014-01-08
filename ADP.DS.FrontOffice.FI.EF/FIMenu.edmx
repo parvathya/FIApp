@@ -78,9 +78,20 @@
     <edmx:ConceptualModels>
       <Schema Namespace="menuvantageModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="menuvantageEntities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
-          <EntitySet Name="ProductDetail" EntityType="menuvantageModel.ProductDetail" />
           <EntitySet Name="ProductSaleStats" EntityType="menuvantageModel.ProductSaleStats" />
+          <EntitySet Name="ProductDetail" EntityType="menuvantageModel.ProductDetail" />
         </EntityContainer>
+        <EntityType Name="ProductSaleStats">
+          <Key>
+            <PropertyRef Name="StatisticId" />
+            <PropertyRef Name="DealerId" />
+            <PropertyRef Name="ProductType" />
+          </Key>
+          <Property Type="Int32" Name="StatisticId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="DealerId" Nullable="false" />
+          <Property Type="String" Name="ProductType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="NumberOfProductsSold" />
+        </EntityType>
         <EntityType Name="ProductDetail">
           <Key>
             <PropertyRef Name="ProductDetailId" />
@@ -106,23 +117,22 @@
           <Property Type="String" Name="VideoUrl" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Type="Boolean" Name="CashType" Nullable="false" />
         </EntityType>
-        <EntityType Name="ProductSaleStats">
-          <Key>
-            <PropertyRef Name="StatisticId" />
-            <PropertyRef Name="DealerId" />
-            <PropertyRef Name="ProductType" />
-          </Key>
-          <Property Type="Int32" Name="StatisticId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
-          <Property Type="Int32" Name="DealerId" Nullable="false" />
-          <Property Type="String" Name="ProductType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Type="Int32" Name="NumberOfProductsSold" />
-        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="menuvantageModelStoreContainer" CdmEntityContainer="menuvantageEntities">
+          <EntitySetMapping Name="ProductSaleStats">
+            <EntityTypeMapping TypeName="menuvantageModel.ProductSaleStats">
+              <MappingFragment StoreEntitySet="ProductSaleStats">
+                <ScalarProperty Name="NumberOfProductsSold" ColumnName="NumberOfProductsSold" />
+                <ScalarProperty Name="ProductType" ColumnName="ProductType" />
+                <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+                <ScalarProperty Name="StatisticId" ColumnName="StatisticId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="ProductDetail">
             <EntityTypeMapping TypeName="menuvantageModel.ProductDetail">
               <MappingFragment StoreEntitySet="ProductDetail">
@@ -138,16 +148,6 @@
                 <ScalarProperty Name="ProductId" ColumnName="ProductId" />
                 <ScalarProperty Name="DealerId" ColumnName="DealerId" />
                 <ScalarProperty Name="ProductDetailId" ColumnName="ProductDetailId" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="ProductSaleStats">
-            <EntityTypeMapping TypeName="menuvantageModel.ProductSaleStats">
-              <MappingFragment StoreEntitySet="ProductSaleStats">
-                <ScalarProperty Name="NumberOfProductsSold" ColumnName="NumberOfProductsSold" />
-                <ScalarProperty Name="ProductType" ColumnName="ProductType" />
-                <ScalarProperty Name="DealerId" ColumnName="DealerId" />
-                <ScalarProperty Name="StatisticId" ColumnName="StatisticId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
