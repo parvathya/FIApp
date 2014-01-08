@@ -34,16 +34,16 @@ sharedServices.factory('myHttpInterceptor', function ($q) {
 //Declare the main app module and inject the spinner
 var productsApp = angular.module('productsApp', ['spinner'])
     .config(['$routeProvider', function ($routeProvider) {
-
-        $routeProvider.when('/login', {
-            templateUrl: 'partials/login.html',
-            controller: 'loginController',
-        });
-        $routeProvider.when('/products', {
-            templateUrl: 'partials/products.html',
-            controller: 'productsController',
-        });
-        $routeProvider.otherwise({
+        $routeProvider.
+        when('/login', {
+            templateUrl: '/partials/login.html',
+            controller: 'loginController'
+        }).
+        when('/products', {
+            templateUrl: '/partials/products.html',
+            controller: 'productsController'
+        }).
+        otherwise({
             redirectTo: '/login'
         });
 
